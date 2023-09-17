@@ -1,4 +1,4 @@
-
+let counter = 0;
 main = function(){
     
     console.log("Ready!");
@@ -52,7 +52,7 @@ updateView = function(){
     favoriteColorBox.style.backgroundColor = color;
     document.querySelector("#favoriteColorBox").innerHTML = c_name;
 }
-let counter = 0;
+
 var c_name = 'null';
 var color = '#800000';
 main();
