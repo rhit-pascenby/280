@@ -1,5 +1,5 @@
 body {
-    background: #FFFFFF
+    background: #ed1d37;
 }
 
 .page-container{
@@ -7,16 +7,20 @@ body {
 }
 
 .button-group{
-    padding: 5vw;
-    text-align: center;
-    
+
+  
+    justify-content: center;
+    justify-items: center;
+
 }
 
 .button-group > button {
     font-size: 1em;
-    margin: 10px;
-    padding: 10px;
+   
+
+ 
 }
+
 
 #counterText{
     color: black;
@@ -25,8 +29,9 @@ body {
     text-align: center;
 }
 
-favoriteColorContainer {
+#favoriteColorContainer {
     width: 200px;
+    
     margin: 20px;
     
  }
@@ -41,11 +46,27 @@ favoriteColorContainer {
  
  .button-group2{
    
-    padding: 1vw;
-    text-align: center;
+
     
+  
+    
+
+      
+
+    text-align: center;
+    justify-content: center;
+
 }
 .button-group2 > button {
-    font-size: 1em;
+ 
+    
   
+    
+
+}
+
+ 
+.row>*{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
 }

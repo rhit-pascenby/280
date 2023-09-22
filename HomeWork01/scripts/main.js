@@ -53,6 +53,6 @@ updateView = function(){
     document.querySelector("#favoriteColorBox").innerHTML = c_name;
 }
 
-var c_name = 'null';
+var c_name = '#800000';
 var color = '#800000';
 main();

@@ -1,0 +1,59 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+}
+
+body{
+    font-size : 35px;
+    font-family : sans-serif;
+    background-color: rbg(255, 196, 234);
+}
+
+.container{
+    height : 100vh;
+}
+
+:root{
+    --color-1: #cdb4db; /* Mobile */
+    --color-2: #fff1e6; /* Tablet */
+    --color-3: #52b788; /* Laptop */
+    --color-4: #bee1e6; /* Desktop */
+}
+
+.container{
+    display : grid;
+    place-items : center;
+    height : 100vh;
+    background-color : var(--color-1);
+}
+
+@media screen and (max-width: 1200px){
+.container{
+    background-color: #bee1e6;
+}
+
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        background-color: #52b788;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        background-color: #fff1e6;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        background-color: #b7526f;
+    }
+    
+}
+
+    

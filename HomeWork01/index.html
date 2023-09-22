@@ -20,55 +20,83 @@
          <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.css' integrity='sha512-clLQSgeWL8eBnDa3/d6YLxnDxZWJyMTpnJZ1dr4/UEkQdaHR4k4NzU7iX7KRn61kY8+AB457oV6cF1btaf9TUg==' crossorigin='anonymous'/>
           <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css' integrity='sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==' crossorigin='anonymous'/>
     </head>
-    <body>
+    
+      <body style="background-color:rgba(203, 203, 203, 0.523);">
       <!-- As a link -->
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark" style="background-color: #800000;">
 
   <div class="container-fluid">
   <a class="navbar-brand" href="#">Favorite Things</a>
   </div>
   
 </nav>
-<hr>
+
+
 
 <div id="mainPage" class = "container page-container">
-  <h1>Favorite Number:</h1>
-  <div id="counterText">0</div>
-  <div class="button-group">
-  <button id="decrementButton" type="button" class="btn btn-warning">-1</button>
-  <button id = "resetButton" type="button" class="btn btn-danger">Reseet</button>
-  <button id="incrementButton" type="button" class="btn btn-success">+1</button> 
-
   <hr>
+  
+  <h2>Favorite Number:</h2>
+  
+  <div id="counterText">0</div>
+
+  
+  <div class="button-group row gx-3 ">
+   
+   
+    <div class = "col-md-2 col-lg-2  col-3 ">
+      
+  <button id="decrementButton" type="button" class="btn btn-primary btn-block " style="background-color: #800000 ">-1</button>
+  
+</div>
+<div class = "col-md-2 col-lg-2 col-3">
+ 
+  <button id = "resetButton" type="button" class="btn btn-primary btn-block"style="background-color: #800000 ">Reseet</button>
+</div>
+<div class = "col-md-2 col-lg-2  col-3">
+  <button id="incrementButton" type="button" class="btn btn-primary btn-block"style="background-color: #800000 ">+1</button> 
+</div>
+
 </div>
 
 
 
+
+<hr>
 
 <h2>Favorite Color:</h2>
 
-<div class = "favoriteColorContainer"></div>
-<div class = "box" id="favoriteColorBox">#800000</div>
-
-<div class="button-group2">
-  
-  <button id="blueButton" type="button" style="background-color: #0000ff; color: white">Blue</button>
-  <button id="greenButton" type="button" style="background-color: #008000;color: white">Green</button> 
-
-  <button id = "redButton" type="button" style="background-color: #ff0000;color: white">Red</button>
-
-  <button id="purpleButton" type="button" style="background-color: #800080 ;color: white">Purple</button>
+<div class = "mx-auto" id = "favoriteColorContainer"><div class = "box" id="favoriteColorBox">#800000</div></div>
 
 
 
+
+<div class="button-group2 row-no-gutters row">
+  <div class = "col-md-2 col-lg-2   col-3" >
+  <button id="blueButton" type="button" class="btn btn-primary btn-block " style="background-color: #0000ff; color: white; margin: 1px">Blue</button>
+</div>
+<div class = "col-md-2 col-lg-2  col-3">
+  <button id="greenButton" type="button" class="btn btn-primary btn-block" style="background-color: #008000;color: white; margin: 1px">Green</button> 
+</div>
+<div class = "col-md-2 col-lg-2  col-3">
+  <button id = "redButton" type="button" class="btn btn-primary btn-block" style="background-color: #ff0000;color: white; margin: 1px">Red</button>
+</div>
+<div class = "col-md-2 col-lg-2  col-3">
+  <button id="purpleButton" type="button"class="btn btn-primary btn-block" style="background-color: #800080 ;color: white; margin: 1px">Purple</button>
+</div>
 
 </div>
 <hr>
 </div>
+  
+</div>
+
+
 
         
      
 
       <script src="scripts/main.js" async defer></script>
     </body>
+  
 </html>
