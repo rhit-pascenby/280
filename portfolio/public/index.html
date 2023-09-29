@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+     <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto">
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js' integrity='sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==' crossorigin='anonymous'></script>
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.css' integrity='sha512-clLQSgeWL8eBnDa3/d6YLxnDxZWJyMTpnJZ1dr4/UEkQdaHR4k4NzU7iX7KRn61kY8+AB457oV6cF1btaf9TUg==' crossorigin='anonymous'/>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css' integrity='sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==' crossorigin='anonymous'/>
+      
+      <link rel='stylesheet' href ="styles/main.css">
+      <title>Media</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title> -->
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/10.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.4.0/firebase-performance-compat.js"></script> -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+ <!-- 
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head> -->
+  <!-- <script src = "scripts/main.js"></script> -->
+  <body>
+    <!-- <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script> -->
+
+    <!-- <nav class="navbar navbar-expand-sm" style="background-color: #800000;">
+    
+      
+    <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="#">Contact</a>
+     
+      
+    </nav> -->
+    <div class ="container  ">
+      <div>
+    <div class="card  " style="width:400px">
+      <div class="card-body ">
+        <h4 class="card-title text-center" id="owl_name">Hedwig</h4>
+       
+       
+      </div>
+      <img class="card-img-bottom" id="owl_pic" src="images/Hedwig.jpg" alt="Card image" style="width:100%">
+    </div>
+  </div>
+  <div>
+    <nav class="navbar navbar-expand-md bg-light justify-content-center">
+      
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link"  href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+  
+    </nav>
+    <div class = "test-box">
+    <h1 id="description">We provide a mail and commercial services for Hogwarts</h1>
+  </div>
+    <div class = "mx-auto button col-4 ">
+     
+      <button id = "selectButton" type="button" class="btn btn-primary btn-block "style="background-color: #800000 " >Select</button>
+    </div>
+    
+    <footer>
+      <div class = " image-row "  >
+        <img src="images/instagram.png"  width="100" height="100" class="img-rounded" alt="Instagram">
+        <img src="images/dribbble-logo.png" width="100" height="100" class="img-rounded" alt="Dribble">
+        <img src="images/behance.png" width="100" height="100" class="img-rounded" alt="behance">
+        <img src="images/twitter.png" width="200" height="100" class="img-rounded" alt="Twitter">
+      </div>
+      
+      </footer>
+
+    </div>
+    
+  </div>
+  </div>
+    <!-- <div id="mainPage" class = "container page-container">
+      <hr>
+      
+      <h2>Favorite Number:</h2>
+      
+      <div id="counterText">0</div>
+    
+      
+      <div class="button-group row gx-3 ">
+       
+       
+        <div class = "col-md-2 col-lg-2  col-3 ">
+          
+      <button id="decrementButton" type="button" class="btn btn-primary btn-block " style="background-color: #800000 ">-1</button>
+      
+    </div>
+    <div class = "col-md-2 col-lg-2 col-3">
+     
+      <button id = "resetButton" type="button" class="btn btn-primary btn-block"style="background-color: #800000 ">Reseet</button>
+    </div>
+    <div class = "col-md-2 col-lg-2  col-3">
+      <button id="incrementButton" type="button" class="btn btn-primary btn-block"style="background-color: #800000 ">+1</button> 
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    <hr>
+    
+    <h2>Favorite Color:</h2>
+    
+    <div class = "mx-auto" id = "favoriteColorContainer"><div class = "box" id="favoriteColorBox">#800000</div></div>
+    
+    
+    
+    
+    <div class="button-group2 row-no-gutters row">
+      <div class = "col-md-2 col-lg-2   col-3" >
+      <button id="blueButton" type="button" class="btn btn-primary btn-block " style="background-color: #0000ff; color: white; margin: 1px">Blue</button>
+    </div>
+    <div class = "col-md-2 col-lg-2  col-3">
+      <button id="greenButton" type="button" class="btn btn-primary btn-block" style="background-color: #008000;color: white; margin: 1px">Green</button> 
+    </div>
+    <div class = "col-md-2 col-lg-2  col-3">
+      <button id = "redButton" type="button" class="btn btn-primary btn-block" style="background-color: #ff0000;color: white; margin: 1px">Red</button>
+    </div>
+    <div class = "col-md-2 col-lg-2  col-3">
+      <button id="purpleButton" type="button"class="btn btn-primary btn-block" style="background-color: #800080 ;color: white; margin: 1px">Purple</button>
+    </div>
+    
+    </div>
+    <hr>
+    </div>
+       -->
+    </div>
+    
+    
+    
+            
+         
+    
+          <script src="scripts/main.js" async defer></script>
+  </body>
+</html>
