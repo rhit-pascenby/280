@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Counter</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href ="styles/main.css">
+         <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js' integrity='sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==' crossorigin='anonymous'></script>
+
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js' integrity='sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==' crossorigin='anonymous'></script>
+         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.css' integrity='sha512-clLQSgeWL8eBnDa3/d6YLxnDxZWJyMTpnJZ1dr4/UEkQdaHR4k4NzU7iX7KRn61kY8+AB457oV6cF1btaf9TUg==' crossorigin='anonymous'/>
+          <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css' integrity='sha512-AZtJoEn5SfSZimv10x5NMO2gaZCdoU8nxtHJK8O4SbKNlQeb1ggkvf0b0QixuuXIjX3Tp5jzBbTWajki81Vl2g==' crossorigin='anonymous'/>
+          <script defer src="/__/firebase/10.4.0/firebase-app-compat.js"></script>
+          <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+        </head>
+    <body>
+      <!-- As a link -->
+<nav class="navbar navbar-dark bg-dark">
+
+  <div class="container-fluid justify-content-center">
+  <a class="navbar-brand" href="#">Tick-Tack-Toe</a>
+  </div>
+  
+</nav>
+
+<div id="main" class = "container">
+  <h1 id="turn">Your turn</h1>
+
+  <div class="box" style="border-left: 0; border-top: 0" id="box1"></div>
+  <div class="box" style="border-top: 0" id="box2"></div>
+  <div class="box" style="border-top: 0; border-right:0" id="box3"></div>
+  <div class="box" style="border-left: 0" id="box4"></div>
+  <div class="box" id="box5"></div>
+  <div class="box" style="border-right: 0" id="box6"></div>
+  <div class="box" style="border-left: 0; border-bottom: 0" id="box7"></div>
+  <div class="box" style="border-bottom: 0" id="box8"></div>
+  <div class="box" style="border-right: 0; border-bottom: 0" id="box9"></div>
+
+  <button class="btn btn-rounded " id="replay">Play Again</button>
+
+  </div>
+
+
+
+
+
+        
+     
+      <script src="scripts/main.js" async defer></script>
+    </body>
+</html>

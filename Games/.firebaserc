@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "tic-tac-toe-d6800"
+  },
+  "targets": {
+    "tic-tac-toe-d6800": {
+      "hosting": {
+        "01": [
+          "games-56c34"
+        ],
+        "02": [
+          "tic-tac-toe-2nd"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
