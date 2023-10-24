@@ -1,0 +1,38 @@
+body {
+    background: #DDDDDD;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(195, 0, 255, 0.288));
+}
+
+.navbar {
+    background-color: rgb(92, 0, 128);
+    color: white;
+    opacity: 0.8;
+    font-size: 20px;
+
+}
+
+.row {
+    margin-top: 10px;
+}
+.page-container {
+    margin-top: 60px;
+}
+
+.card {
+    margin: 25px 10px;
+    width: 26rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+    text-align: center;
+    margin-block-start: 0.05em;
+}
+
+h5 {
+    text-align: center;  
+}
+
+p.card-text {
+    text-align: center;
+}
