@@ -29,19 +29,23 @@ function textToArray(text) {
 	// Your Code
 	const sentences = text.split('\n');
 	
+	
 	return sentences;
 }
 
  // TODO: create for loop over text array. Append span tag and update code
  function appendText (textArray){
     // Your Code
-	let newParagraph = document.createElement('p');
+	let newParagraph = document.createElement('span');
+	newParagraph.style.display = "block";
+	console.log("text");
+	console.log(textArray);
 	for(let k=0; k<textArray.length; k++){
-		let appen = (`<span style = "display:block;">${textArray[k]}</span>`)
+		let appen = (`${textArray[k]}`)
 	
 		 newParagraph.append(appen);
  }
-
+console.log("test", newParagraph);
  return newParagraph;
 }
 
@@ -61,18 +65,24 @@ function updateClient( ) {
 		.then(data => {
 			// Use the data retrieved from the API
 			// console.log(data[id].name);
-		console.log(data[id].message)
+		
 		
 			let title = data[id].name;
+			
 			cardText = data[id].message;
 			cardImage = data[id].avatar;
-			cardText = processText(cardText);
-	
-			cardText = textToArray(cardText);
+			 cardText = processText(cardText);
+			
+			 cardText = textToArray(cardText);
+			 cardText = appendText(cardText);
+			
+			
 
 	appendText(cardText);	
 			document.querySelector("#name").innerHTML = `${title}`;
-        document.querySelector('#text').innerHTML = `${cardText}`;
+			console.log(cardText);
+			text.appendChild(cardText);
+        // document.querySelector('#text') = `${cardText}`;
 		document.querySelector('#image').src = `${cardImage}`;
 			
 		})
