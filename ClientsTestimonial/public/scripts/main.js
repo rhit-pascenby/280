@@ -29,7 +29,7 @@ function textToArray(text) {
 	// Your Code
 	const sentences = text.split('\n');
 	
-	
+	console.log(sentences);
 	return sentences;
 }
 
@@ -38,14 +38,14 @@ function textToArray(text) {
     // Your Code
 	let newParagraph = document.createElement('span');
 	newParagraph.style.display = "block";
-	console.log("text");
-	console.log(textArray);
+
 	for(let k=0; k<textArray.length; k++){
 		let appen = (`${textArray[k]}`)
 	
 		 newParagraph.append(appen);
  }
-console.log("test", newParagraph);
+
+ 
  return newParagraph;
 }
 
@@ -80,9 +80,9 @@ function updateClient( ) {
 
 	appendText(cardText);	
 			document.querySelector("#name").innerHTML = `${title}`;
-			console.log(cardText);
+			
 			text.appendChild(cardText);
-        // document.querySelector('#text') = `${cardText}`;
+      
 		document.querySelector('#image').src = `${cardImage}`;
 			
 		})
@@ -94,11 +94,7 @@ function updateClient( ) {
 		
 	// PART 2. Text processing steps - processText, textToArraay, appendText
 
-	// text = processText(text);
-	
-	// text = textToArray(text);
-
-	// appendText(text);	   
+  
   }
 
 
